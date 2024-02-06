@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>SheCodesPlus - Homework 👩🏽‍💻</title>
+    <style>
+      body {
+        background-color: #f9f7fe;
+        font-family: "roboto", sans-serif;
+      }
+      h1 {
+        font-size: 45px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      p {
+        color: darkgray;
+      }
+      p strong {
+        color: #f65282;
+      }
+      .core {
+        background-color: white;
+        display: block;
+        border-radius: 10px;
+        padding: 40px;
+        width: 500px;
+        margin: 50px auto;
+      }
+      section {
+        margin-top: 20px;
+        border-top: #f9f7fe 2px solid;
+        border-bottom: #f9f7fe 2px solid;
+      }
+      footer p {
+        text-align: center;
+        margin-bottom: 0;
+        padding-top: 20px;
+      }
+      p em {
+        color: #885df1;
+      }
+      .today-add {
+        font-size: 80px;
+        color: black;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: +130px;
+        right: +200px;
+      }
+      .celcius {
+        font-size: 20px;
+        font-weight: normal;
+        position: absolute;
+        top: 12px;
+      }
+      .emoji {
+        font-size: 35px;
+        position: absolute;
+        top: 30px;
+        right: 55px;
+      }
+      .form-button {
+        font-size: 16px;
+        border-radius: 8px;
+        background: #885df1;
+        color: white;
+        border: #885df1 2px solid;
+        padding: 20px;
+        margin-left: 5px;
+      }
+      .form-input {
+        background: #f9f7fe;
+        border: #f9f7fe 2px solid;
+        font-size: 16px;
+        border-radius: 8px;
+        padding: 20px;
+        width: 330px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 0;
+        list-style: none;
+        padding-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="core">
+      <header>
+        <form action="/submit">
+          <input
+            type="text"
+            placeholder="Enter a city..."
+            required
+            class="form-input"
+          />
+          <input type="submit" value="Search" class="form-button" />
+        </form>
+      </header>
+      <section>
+        <h1>Zürich</h1>
+        <p class="today">
+          Monday 10:15, Cloudy <br />
+          Humidity: <strong>90%</strong>, Wind: <strong>10km/h</strong>
+        </p>
+        <p class="today-add">
+          <span class="emoji">☁️ </span>1<span class="celcius">°C</span>
+        </p>
+        <ul>
+          <li>Tuesday 🌧<br /><strong>12°</strong> - 6°C</li>
+          <li>Wednesday ☁️<br /><strong>13°</strong> - 9°C</li>
+          <li>Thursday ⛅️<br /><strong>12°</strong> - 6°C</li>
+          <li>Friday 🌧<br /><strong>11°</strong> - 4°C</li>
+          <li>Saturday 🌤<br /><strong>8°</strong> - 3°C</li>
+        </ul>
+      </section>
+      <footer>
+        <p>This project was coded by <em>Victoria Kladny</em></p>
+      </footer>
+    </div>
+  </body>
+</html>
